@@ -5,10 +5,11 @@
     font-style: normal;
 }
 
-body{
+.wrapper {
     display: flex;
-
+    justify-content: center;   
 }
+
 p{
     padding-top: 20px;
     text-align: left;
@@ -18,17 +19,17 @@ p{
 }
 
 .nameheader{
-
     border-right: 1px solid #403F44;
     border-bottom: 1px solid #403F44;
     height: 130px;
-    width: 260px;    
-  
+    width: 260px;     
 }
+
 .rabb
 {
     color: #837c9a;
 }
+
 h1{
     padding-top: 10px;   
     float: left;
@@ -38,6 +39,7 @@ h1{
     color: #55665e;
     font-size: 1.8rem;
 }
+
 h3{
     margin: 0;
     text-transform: uppercase;
@@ -47,6 +49,7 @@ h3{
     color: #837c9a;
     font-weight: 300;
 }
+
 h2{
     margin: 0;
     text-transform: uppercase;
@@ -56,6 +59,7 @@ h2{
     color: #837c9a;
     
 }
+
 .menu{   
     display: flex;
     justify-content: center;
@@ -63,47 +67,42 @@ h2{
     border-right: 1px solid #403F44;
     border-bottom: 1px solid #403F44;
     height: 130px;
-    width: 699px;
+    width: 700px;
  
 }
-.container{
-    margin-left: 10%;
-}
-.leftcolumn{  
-    height: 570px;
-    width: 260px;  
-    border-right: 1px solid #403F44;
-    border-bottom: 1px solid #403F44;     
-}
 
-.rightcolumn h1{    
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-left: -0.7px;
+.rightcolumn{   
+    margin-left: -1px;
     margin-top: 130px;
     height: 561px;
     width: 260px;  
     border-left:1px solid #403F44;
     border-bottom: 1px solid #403F44;
 }
-.skilllist
-{
-    margin: 10px 20px;
-    margin-top: 12%;
-    position: fixed;
-    list-style:circle;
+
+.skilllist{
+    margin: 20px;
+    margin-top: 20%;
+    list-style: circle;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    
+    align-items: flex-start; /* Align items to the left edge of the container */ 
 }
+
 .skilllist li{
     margin: 5px 0;
 }
+
 .skilllist h3{
     padding-left: 20px;
     text-align: left;
+}
+
+.leftcolumn{  
+    height: 570px;
+    width: 260px;  
+    border-right: 1px solid #403F44;
+    border-bottom: 1px solid #403F44;     
 }
 
 #rabb{
@@ -113,6 +112,7 @@ h2{
     border-radius: 50%;   
     border: 1px solid #403F44;
 }
+
 .contactheadline h2{
     margin: 10px;
     text-align: center;
@@ -120,23 +120,27 @@ h2{
     padding-top: 30px;
     color:#55665e;
 }
-.contactdetails > img
-{  
+
+.contactdetails > img{  
     height: 20px;
 }
+
 .contactdetails{
     padding-top: 10px;
     margin-left: 21.5%;
 }
+
 .telefonnr{
     float: right;
     padding-top: 1px;
     padding-right: 97px;
 }
+
 .email{
     float: right;
     padding-right: 7px;
 }
+
 .adress{
 
     float: right;
@@ -145,61 +149,71 @@ h2{
 .text{
     margin-right: 10px
 }
+
 .menu a{
     text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit the color from the parent element */
 }
+
 .menu a.active {
-    color: #c38f8f; /* Change this to the desired color */
-    
+    color: #c38f8f; /* Change this to the desired color */    
 }
+
 .text:hover{
     opacity:0.5;
 }
+
 .middlebox{
     position: relative;
     margin: 0 auto;
     height: 603px;
     width: 600px;
 }
+
 .iframe{
       width: 100%; /* Set the iframe width to 100% of the parent div */
       height: 100%; /* Set the iframe height to 100% of the parent div */
       border: none; /* Remove border from the iframe */
 }
+
 .quote > img{
     padding-top: 20px;
     float: right;
     height: 40px;
 }
+
 .quote > .developer{
     margin-top: 20px;    
     border-radius: 20%;
     float:left;
     height: 200px;
 }
+
 .developer{
     position: relative;
     padding-top: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Adjust this value as needed */
-       
+    gap: 5px; /* Adjust this value as needed */      
 }
+
 .developer .txt{
     margin: 0;
     padding: 0;
 }
+
 .developer .paragraf{
     margin: 0;
     padding: 15x;
 }
+
 .quote > .virtualreality{
     margin-top: 80px;
     height: 200px;
     border-radius: 25%;
 }
+
 .padbox{
     padding-top: 30px;
 }
@@ -209,10 +223,12 @@ h2{
     position: absolute;
     height: 80px;
 }
+
 .profile, .education, .workexperience{
     border-right: 1px solid #403F44;
     padding-right: 10px ;
 }
+
 .videos{
     position: relative;
     padding-top: 30px;
@@ -221,9 +237,11 @@ h2{
     flex-direction: column;
     gap: 5px; /* Adjust this value as needed */
 }
+
 .videospadding{
     padding-top: 30px;
 }
+
 .footer{
    text-align: center;
    font-style: italic; 
@@ -232,7 +250,6 @@ h2{
 }
 
 .socialheadline h2{
-
     margin: 3px;
     text-align: center;
     font-weight: 300;
@@ -246,10 +263,11 @@ h2{
     display: flex;
     flex-direction:row;
 }
+
 .boxsocial img{
-    height: 55px;
-    
+    height: 55px; 
 }
+
 .boxsocial:hover{
     opacity: 0.5;
 }
