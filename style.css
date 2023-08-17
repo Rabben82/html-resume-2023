@@ -48,7 +48,8 @@ h2{
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    min-width: fit-content;
 }
 
 /* Middle container styles... */
@@ -103,15 +104,8 @@ h2{
 /* Left column styles... */
 
 .left-container{  
-    display: flex;
-    flex-direction: column;       
-}
-
-.nameheader{
-    border-right: 1px solid #403F44;
-    border-bottom: 1px solid #403F44;
-    height: 130px;
-    width: 260px;     
+    display:flex;
+    flex-direction: column;   
 }
 
 .left-column{
@@ -119,6 +113,13 @@ h2{
     width: 260px;  
     border-right:1px solid #403F44;
     border-bottom: 1px solid #403F44;
+}
+
+.nameheader{
+    border-right: 1px solid #403F44;
+    border-bottom: 1px solid #403F44;
+    height: 130px;
+    width: 260px;     
 }
 
 #rabb{
@@ -196,6 +197,33 @@ h2{
     text-align: left;
 }
 
+/* Social media styles... */
+
+.socialheadline h2{
+    margin: 3px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 40px;
+    color:#55665e;
+}
+
+.social{
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+}
+
+.boxsocial img{
+    height: 55px; 
+}
+
+.boxsocial:hover{
+    opacity: 0.5;
+}
+
+/* Additional styles... */
+
 .text:hover{
     opacity:0.5;
 }
@@ -262,31 +290,6 @@ h2{
 
 .videospadding{
     padding-top: 30px;
-}
-
-/* Social media styles... */
-
-.socialheadline h2{
-    margin: 3px;
-    text-align: center;
-    font-weight: 300;
-    padding-top: 40px;
-    color:#55665e;
-}
-
-.social{
-    padding-top: 10px;
-    justify-content: center;
-    display: flex;
-    flex-direction:row;
-}
-
-.boxsocial img{
-    height: 55px; 
-}
-
-.boxsocial:hover{
-    opacity: 0.5;
 }
 
 /* Footer styles... */
