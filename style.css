@@ -5,24 +5,12 @@
     font-style: normal;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 p{
     padding-top: 20px;
     text-align: left;
     font-family: 'Lato', Helvetica, sans-serif;
     font-style: italic;
     font-size: 1rem;
-}
-
-.nameheader{
-    border-right: 1px solid #403F44;
-    border-bottom: 1px solid #403F44;
-    height: 130px;
-    width: 260px;     
 }
 
 .rabb
@@ -60,21 +48,60 @@ h2{
     
 }
 
-.menu{   
+.middle-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.menu{   
+    display:flex;
+    justify-content:center;
     align-items:end;
-    border-right: 1px solid #403F44;
     border-bottom: 1px solid #403F44;
     height: 130px;
     width: 700px;
- 
+}
+
+.logo{
+    margin-bottom: 40px;
+    position: absolute;
+    height: 80px;
+}
+
+.middlebox{
+    align-self: center;
+    height: 600px;
+    width: 600px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.left-container{  
+    display: flex;
+    flex-direction: column;       
+}
+
+.nameheader{
+    border-right: 1px solid #403F44;
+    border-bottom: 1px solid #403F44;
+    height: 130px;
+    width: 260px;     
+}
+
+.left-column{
+    height: 561px;
+    width: 260px;  
+    border-right:1px solid #403F44;
+    border-bottom: 1px solid #403F44;
 }
 
 .rightcolumn{   
-    margin-left: -1px;
-    margin-top: 130px;
-    height: 561px;
+    align-self:flex-start;
+    height: 693px;
     width: 260px;  
     border-left:1px solid #403F44;
     border-bottom: 1px solid #403F44;
@@ -82,7 +109,7 @@ h2{
 
 .skilllist{
     margin: 20px;
-    margin-top: 35%;
+    margin-top: 82%;
     list-style: circle;
     display: flex;
     flex-direction: column;
@@ -96,13 +123,6 @@ h2{
 .skilllist h3{
     padding-left: 20px;
     text-align: left;
-}
-
-.leftcolumn{  
-    height: 570px;
-    width: 260px;  
-    border-right: 1px solid #403F44;
-    border-bottom: 1px solid #403F44;     
 }
 
 #rabb{
@@ -152,7 +172,7 @@ h2{
 
 .menu a{
     text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit the color from the parent element */
+    color: inherit; /* Inherit the color from the parent element */
 }
 
 .menu a.active {
@@ -161,13 +181,6 @@ h2{
 
 .text:hover{
     opacity:0.5;
-}
-
-.middlebox{
-    position: relative;
-    margin: 0 auto;
-    height: 603px;
-    width: 600px;
 }
 
 .iframe{
@@ -218,12 +231,6 @@ h2{
     padding-top: 30px;
 }
 
-.containertwo .logo{
-    margin-bottom: 40px;
-    position: absolute;
-    height: 80px;
-}
-
 .profile, .education, .workexperience{
     border-right: 1px solid #403F44;
     padding-right: 10px ;
@@ -243,13 +250,13 @@ h2{
 }
 
 .footer{
-   text-align: center;
-   font-style: italic; 
-   font-size: small;
-   color: rgba(0, 0, 0, 0.5);
-}
+    text-align: center;
+    font-style: italic; 
+    font-size: small;
+    color: rgba(0, 0, 0, 0.5);
+ }
 
-.socialheadline h2{
+ .socialheadline h2{
     margin: 3px;
     text-align: center;
     font-weight: 300;
