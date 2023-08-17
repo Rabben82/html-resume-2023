@@ -6,15 +6,14 @@
 }
 
 p{
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: left;
     font-family: 'Lato', Helvetica, sans-serif;
     font-style: italic;
     font-size: 1rem;
 }
 
-.rabb
-{
+.rabb{
     color: #837c9a;
 }
 
@@ -43,18 +42,24 @@ h2{
     text-transform: uppercase;
     text-align: center;
     font-family: 'Salina', Helvetica, sans-serif;
-    font-size: 18px;
-    color: #837c9a;
-    
+    font-size: 1.2rem;
+    color: #837c9a;   
 }
 
-.middle-container{
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Middle container styles... */
+
+.middle-container{   
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.menu{   
+.menu{  
     display:flex;
     justify-content:center;
     align-items:end;
@@ -75,10 +80,27 @@ h2{
     width: 600px;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
+.iframe{
+    width: 100%; /* Set the iframe width to 100% of the parent div */
+    height: 100%; /* Set the iframe height to 100% of the parent div */
+    border: none; /* Remove border from the iframe */
 }
+
+.resizable{
+    height: 560px;
+}
+
+.menu a{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
+.menu a.active{
+    color: #c38f8f; /* Change this to the desired color */    
+}
+
+
+/* Left column styles... */
 
 .left-container{  
     display: flex;
@@ -97,32 +119,6 @@ h2{
     width: 260px;  
     border-right:1px solid #403F44;
     border-bottom: 1px solid #403F44;
-}
-
-.rightcolumn{   
-    align-self:flex-start;
-    height: 693px;
-    width: 260px;  
-    border-left:1px solid #403F44;
-    border-bottom: 1px solid #403F44;
-}
-
-.skilllist{
-    margin: 20px;
-    margin-top: 82%;
-    list-style: circle;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align items to the left edge of the container */ 
-}
-
-.skilllist li{
-    margin: 5px 0;
-}
-
-.skilllist h3{
-    padding-left: 20px;
-    text-align: left;
 }
 
 #rabb{
@@ -170,23 +166,38 @@ h2{
     margin-right: 10px
 }
 
-.menu a{
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color from the parent element */
+/* Right column styles... */
+
+.rightcolumn{   
+    align-self:flex-start;
+    height: 693px;
+    width: 260px;  
+    border-left:1px solid #403F44;
+    border-bottom: 1px solid #403F44;
 }
 
-.menu a.active {
-    color: #c38f8f; /* Change this to the desired color */    
+/* Skill list styles... */
+
+.skilllist{
+    margin: 20px;
+    margin-top: 82%;
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left edge of the container */ 
+}
+
+.skilllist li{
+    margin: 5px 0;
+}
+
+.skilllist h3{
+    padding-left: 20px;
+    text-align: left;
 }
 
 .text:hover{
     opacity:0.5;
-}
-
-.iframe{
-      width: 100%; /* Set the iframe width to 100% of the parent div */
-      height: 100%; /* Set the iframe height to 100% of the parent div */
-      border: none; /* Remove border from the iframe */
 }
 
 .quote > img{
@@ -201,6 +212,8 @@ h2{
     float:left;
     height: 200px;
 }
+
+/* Education, WorkExperience, Featured Projects styles... */
 
 .developer{
     position: relative;
@@ -236,6 +249,8 @@ h2{
     padding-right: 10px ;
 }
 
+/* Videos styles... */
+
 .videos{
     position: relative;
     padding-top: 30px;
@@ -249,14 +264,9 @@ h2{
     padding-top: 30px;
 }
 
-.footer{
-    text-align: center;
-    font-style: italic; 
-    font-size: small;
-    color: rgba(0, 0, 0, 0.5);
- }
+/* Social media styles... */
 
- .socialheadline h2{
+.socialheadline h2{
     margin: 3px;
     text-align: center;
     font-weight: 300;
@@ -279,6 +289,13 @@ h2{
     opacity: 0.5;
 }
 
+/* Footer styles... */
 
+.footer{
+    text-align: center;
+    font-style: italic; 
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+ }
 
 
