@@ -6,7 +6,7 @@
 }
 
 p{
-    padding-top: 30px;
+    
     text-align: left;
     font-family: 'Lato', Helvetica, sans-serif;
     font-style: italic;
@@ -27,6 +27,15 @@ h1{
     font-size: 1.8rem;
 }
 
+h2{
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Salina', Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #837c9a;   
+}
+
 h3{
     margin: 0;
     text-transform: uppercase;
@@ -37,14 +46,35 @@ h3{
     font-weight: 300;
 }
 
-h2{
-    margin: 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Salina', Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: #837c9a;   
+h4
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; 
 }
+
+.txtnopad
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.txtgoal
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.txtgoalone
+{
+    margin-top: 30px;
+    padding-bottom: 5px;
+}
+
 
 .container{
     display: flex;
@@ -188,6 +218,14 @@ h2{
     align-items: flex-start; /* Align items to the left edge of the container */ 
 }
 
+.goallist{
+    list-style: circle;
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Align items to the left edge of the container */ 
+    justify-content: left;
+}
+
 .skilllist li{
     margin: 5px 0;
 }
@@ -257,7 +295,8 @@ h2{
     padding: 0;
 }
 
-.developer .paragraf{
+.developer, .paragraf{
+    padding-top: 30px;
     margin: 0;
     padding: 15x;
 }
@@ -272,7 +311,7 @@ h2{
     padding-top: 30px;
 }
 
-.profile, .education, .workexperience{
+.profile, .education, .workexperience, .featuredprojects{
     border-right: 1px solid #403F44;
     padding-right: 10px ;
 }
